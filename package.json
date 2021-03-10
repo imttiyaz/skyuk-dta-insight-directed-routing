@@ -1,0 +1,41 @@
+{
+  "name": "skyuk-dta-insight-directed-routing",
+  "version": "1.0.0",
+  "description": "Call-Routing-API",
+  "main": "index.js",
+  "scripts": {
+    "test": "SET NODE_ENV=development&& vows --spec test/*.js",
+    "start": "node index.js",
+    "start:dev": "SET NODE_ENV=DEVELOPMENT&&nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaridiTeja927/skyuk-dta-insight-directed-routing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaridiTeja927/skyuk-dta-insight-directed-routing/issues"
+  },
+  "homepage": "https://github.com/MaridiTeja927/skyuk-dta-insight-directed-routing#readme",
+  "dependencies": {
+    "@google-cloud/secret-manager": "^3.3.0",
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "dateformat": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5",
+    "underscore": "^1.12.0",
+    "vows": "^0.8.3",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

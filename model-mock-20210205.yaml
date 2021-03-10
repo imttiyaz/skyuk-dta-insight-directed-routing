@@ -1,0 +1,20 @@
+runtime: nodejs14
+env: standard
+
+env_variables: 
+  PORT: "8080"
+  API_PATH: "/RoutingRecommendations"
+  LOG_LEVEL: "info"
+  PROJECT_NAME: "skyuk-uk-call-routing-dev"
+  AUTH_USERNAME: "SECRET-AUTH-USER"
+  AUTH_PASSWORD: "SECRET-AUTH-PASSWORD" 
+  DATABASE_CLOUD_SQL_INSTANCE_NAME: "/cloudsql/skyuk-uk-call-routing-dev:europe-west1:sky-call-routing"
+  DATABASE_USERNAME_KEY: "SECRET-DATABASE-USER"
+  DATABASE_PASSWORD_KEY: "SECRET-DATABASE-PASSWORD"
+  DATABASE_NAME: "call_routing"
+  DATABASE_VIEW_NAME : "insight_directed_routing_1"
+  DATABASE_MODEL_NAME : "model_mock-20210205"
+  DATABASE_PORT: 5432
+
+automatic_scaling:
+  min_instances: 5

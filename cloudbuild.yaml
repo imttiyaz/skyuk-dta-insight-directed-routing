@@ -1,0 +1,10 @@
+steps:
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy","model-mock-20210205.yaml","--version=model-mock-20210205"]
+  timeout: "1600s"
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy","model-mock-20210303.yaml","--version=model-mock-20210303"]
+  timeout: "1600s"
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app","services","set-traffic","--splits","model-mock-20210205=0.7,model-mock-20210303=0.3","--split-by","random"]
+  timeout: "1600s"
